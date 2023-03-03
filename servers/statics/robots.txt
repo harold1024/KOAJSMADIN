@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Allow: /*
+Allow: /#/*
+Allow: /*.js$
+Allow: /*.css$
+Allow: /*.html$

@@ -1,0 +1,184 @@
+{{include './layout/head.html'}}
+<!--addHtmlCode-->
+<!--ShouYecsslinkStart -->
+<link rel="stylesheet" href="/view/css/swiper-bundle.min.css">
+<link rel="stylesheet" href="/view/css/index.css">
+<!-- ShouYecsslinkEnd -->
+
+<!--ShouYehtmlStart-->
+
+<div id="defaultId1" class=" defBord  ">
+    <div id="c9a8a4" class="container gui-btn  defBord  ">
+        <div id="c12a39" class=" u06f7a  defBord  ">
+            <h2 id="cf2dfa" class="defBord  uda476  ">产品展示
+            </h2>
+            <h3 id="cd56b4" class="defBord  u26337  ">NEWS CENTER
+            </h3>
+        </div>
+        <div id="ce9819" class=" defBord  ">
+            <div id="cdb4b2" class="swiper mySwiper defBord  u26866">
+                <div id="cc216d" class="swiper-wrapper defBord  ">
+                    {{each data.products item index}}
+
+                    <div id="c8d075" class="swiper-slide animated wow fadeInUp  defBord  u3ff08">
+                        <a id="c610a7" class="main-a  defBord  u2b44e" href="/product/details/{{item.typeIds[0]}}/{{item.typeId}}/{{item._id}}">
+                            <div id="c9b5b1" class=" defBord  uc87fb">
+                                <img id="ce48b3" class=" defBord  project_image" src="{{webConfig.defaultImg}}" alt="{{item.name}}" data-original="{{item.img||webConfig.defaultImg}}" />
+                            </div>
+                            <div id="c0c408" class=" defBord  ufabb6">
+                                <p id="ca1fc5" class="defBord  u0df4e">{{item.name}}
+                                </p>
+                                <span id="c39f82" class="defBord  u27c90">{{item.createTime|dateFormat}}
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    {{/each}}
+
+                </div>
+                <div id="c475c3" class=" defBord  ">
+                    <div id="cf7d25" class="swiper-button-next defBord  ">
+                    </div>
+                    <div id="c15ff1" class="swiper-button-prev defBord  ">
+                    </div>
+                </div>
+                <div id="c11a08" class="swiper-pagination defBord  ">
+                </div>
+            </div>
+        </div>
+        <div id="cd1a81" class=" defBord  uc36fb">
+            <button id="c7d5a2" class="defBord  gui-button-round" type="button">了解更多
+            </button>
+        </div>
+    </div>
+    <div id="c761f1" class=" defBord  ">
+        <div id="c788e8" class=" u06f7a  defBord  ">
+            <h2 id="c89c3d" class="defBord  uda476  ">关于我们
+            </h2>
+            <h3 id="c04c46" class="defBord  u26337  ">ABOUT US
+            </h3>
+        </div>
+        <div id="c0c222" class=" defBord  u726f9">
+            {{each data.columns item index}}
+
+            <div id="ca5df3" class=" defBord  ubf05b">
+                <div id="cd01eb" class="animated wow fadeInLeft  defBord  ufdd0c">
+                    <h2 id="c95d49" class="defBord  uda4762">{{item.name}}
+                    </h2>
+                    <p id="c01fb5" class="defBord  u71baa">{{item.intro}}
+                    </p>
+                    <a id="c02100" class="defBord gui-button-round " type="button" href="/column/content/{{item._id}}">了解更多
+                    </a>
+                </div>
+            </div>
+            {{/each}}
+
+        </div>
+    </div>
+    <div id="cacb01" class="container  defBord  uc0f39">
+        <!-- 左边新闻列表  
+            -->
+        <div id="c3fadd" class=" defBord  u3f2ed">
+            <div id="c2c543" class=" defBord  u0fcb0">
+                <div id="c7a337" class=" defBord  u770f5">
+                    <svg id="c39556" class="icon defBord  " t="1658924695898" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6183" width="32" height="32">
+                        <path id="c4d18a" class=" defBord  " d="M896 981.333333H96a53.393333 53.393333 0 0 1-53.333333-53.333333V96a53.393333 53.393333 0 0 1 53.333333-53.333333h704a53.393333 53.393333 0 0 1 53.333333 53.333333v117.333333h74.666667a53.393333 53.393333 0 0 1 53.333333 53.333334v629.333333a85.426667 85.426667 0 0 1-85.333333 85.333333z m-42.666667-725.333333v640a42.666667 42.666667 0 0 0 85.333334 0V266.666667a10.666667 10.666667 0 0 0-10.666667-10.666667zM96 85.333333a10.666667 10.666667 0 0 0-10.666667 10.666667v832a10.666667 10.666667 0 0 0 10.666667 10.666667h726.12a84.82 84.82 0 0 1-11.453333-42.666667V96a10.666667 10.666667 0 0 0-10.666667-10.666667z m565.333333 725.333334H234.666667a21.333333 21.333333 0 0 1 0-42.666667h426.666666a21.333333 21.333333 0 0 1 0 42.666667z m0-170.666667H234.666667a21.333333 21.333333 0 0 1 0-42.666667h426.666666a21.333333 21.333333 0 0 1 0 42.666667z m0-213.333333H533.333333a21.333333 21.333333 0 0 1 0-42.666667h128a21.333333 21.333333 0 0 1 0 42.666667z m0-170.666667H533.333333a21.333333 21.333333 0 0 1 0-42.666667h128a21.333333 21.333333 0 0 1 0 42.666667zM412.393333 468.133333A21.333333 21.333333 0 0 0 426.666667 448V234.666667a21.333333 21.333333 0 0 0-42.666667 0v152.52L251.333333 221.333333a21.333333 21.333333 0 0 0-38 13.333334v213.333333a21.333333 21.333333 0 0 0 42.666667 0V295.48L388.666667 461.333333a21.333333 21.333333 0 0 0 23.72 6.806667z" fill="#5C5C66" p-id="6184">
+                        </path>
+                    </svg>
+                </div>
+                <div id="c914e9" class=" defBord  u3e1eb">
+                    <h3 id="c82c46" class="animated wow bounceInRight  defBord  uca5b9">NEWS CENTER
+                    </h3>
+                    <h2 id="c9b84a" class="defBord animated wow bounceInLeft  u405f9">文章中心
+                    </h2>
+                </div>
+                <a id="c54c25" class="defBord gui-button-round " type="button" href="/article/list/{{data.news[0].typeIds[0]}}/{{data.news[0].typeId}}/0">查看更多
+                </a>
+            </div>
+            {{each data.news item index}}
+
+            <a id="c000f2" class="main-a  defBord  u98fd6" href="/article/details/{{item.typeIds[0]}}/{{item.typeId}}/{{item._id}}">
+                <div id="cea8a1" class="animated wow flipInY defBord  u24a77">
+                    <span id="c53e6e" class="defBord  ub277a">{{item.createTime|dateFormat}}
+                    </span>
+                </div>
+                <div id="c79563" class=" defBord  u24002">
+                    <h3 id="c5bd0b" class="defBord  ">{{item.title}}
+                    </h3>
+                    <p id="c8c095" class="defBord  u6e8c6">{{item.intro}}
+                    </p>
+                </div>
+            </a>
+            {{/each}}
+
+        </div>
+        <!-- 右边企业信息
+               -->
+        <div id="c1b633" class="lazyload defBord  ubcc99">
+            <div id="c3df8b" class=" defBord  u0fcb0">
+                <div id="cb8f9c" class=" defBord  u770f5">
+                    <svg id="c2ab6c" class="icon defBord  " t="1658924695898" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6183" width="32" height="32">
+                        <path id="c6e1c2" class=" defBord  " d="M896 981.333333H96a53.393333 53.393333 0 0 1-53.333333-53.333333V96a53.393333 53.393333 0 0 1 53.333333-53.333333h704a53.393333 53.393333 0 0 1 53.333333 53.333333v117.333333h74.666667a53.393333 53.393333 0 0 1 53.333333 53.333334v629.333333a85.426667 85.426667 0 0 1-85.333333 85.333333z m-42.666667-725.333333v640a42.666667 42.666667 0 0 0 85.333334 0V266.666667a10.666667 10.666667 0 0 0-10.666667-10.666667zM96 85.333333a10.666667 10.666667 0 0 0-10.666667 10.666667v832a10.666667 10.666667 0 0 0 10.666667 10.666667h726.12a84.82 84.82 0 0 1-11.453333-42.666667V96a10.666667 10.666667 0 0 0-10.666667-10.666667z m565.333333 725.333334H234.666667a21.333333 21.333333 0 0 1 0-42.666667h426.666666a21.333333 21.333333 0 0 1 0 42.666667z m0-170.666667H234.666667a21.333333 21.333333 0 0 1 0-42.666667h426.666666a21.333333 21.333333 0 0 1 0 42.666667z m0-213.333333H533.333333a21.333333 21.333333 0 0 1 0-42.666667h128a21.333333 21.333333 0 0 1 0 42.666667z m0-170.666667H533.333333a21.333333 21.333333 0 0 1 0-42.666667h128a21.333333 21.333333 0 0 1 0 42.666667zM412.393333 468.133333A21.333333 21.333333 0 0 0 426.666667 448V234.666667a21.333333 21.333333 0 0 0-42.666667 0v152.52L251.333333 221.333333a21.333333 21.333333 0 0 0-38 13.333334v213.333333a21.333333 21.333333 0 0 0 42.666667 0V295.48L388.666667 461.333333a21.333333 21.333333 0 0 0 23.72 6.806667z" fill="#5C5C66" p-id="6184">
+                        </path>
+                    </svg>
+                </div>
+                <div id="cca04e" class=" defBord  u3e1eb">
+                    <h3 id="c19f79" class="defBord uca5b9  ">NEWS CENTER
+                    </h3>
+                    <h2 id="cab358" class="defBord u405f9  ">合作伙伴
+                    </h2>
+                </div>
+                <a id="c15795" class="defBord gui-button-round " type="button" target="_blank" href="http://www.guiplan.com">查看更多
+                </a>
+            </div>
+            <img id="c0bd6f" class=" defBord  u696c4" src="/view/images/women.jpg" alt="guiplan官网" />
+            <p id="c4f28d" class="defBord  u130a0">guiplan是一款可视化低代码开发工具，也是一款建站工具，即使不懂代码的小白也能轻松绘制自己的网站。相对于传统低代码工具而言，guiplan支持自适应定制，支持传统主流框架如bootstrap,uniapp,element-ui。还支持将本地代码转换为可视化二次开发。整个搭建过程也是围绕代码的编写而定，生成代码与手写代码几乎无差异。可以很完整的做到适应性，灵活开发。 即使不懂代码的小白也能通过插入模板即可快速搭建一个属于自己的企业网站
+            </p>
+        </div>
+    </div>
+    <div id="c0e12e" class=" defBord  ">
+        <div id="cbcee3" class=" defBord  u06f7a">
+            <h2 id="c7df62" class="defBord  ">我们的优势
+            </h2>
+            <h3 id="c198a9" class="defBord u26337  ">OUR ADVANTAGES
+            </h3>
+        </div>
+        <div id="c8d19b" class=" defBord  u8612f">
+            {{each data.advantages item index}}
+
+            <a id="cd905f" class="container main-a  defBord  u75a93" href="/article/details/{{item.typeIds[0]}}/{{item.typeId}}/{{item._id}}">
+                <div id="c1cded" class="animated wow fadeInLeft  defBord  uc1b05">
+                    <div id="c415b7" class=" defBord  uc6dfe">
+                        <span id="ca9d34" class="defBord  u78557">{{index + 1}}
+                        </span>
+                        <h2 id="ce67be" class="defBord  u03323">{{item.title}}
+                        </h2>
+                        <div id="cf2d69" class=" defBord  u04ab8">
+                        </div>
+                    </div>
+                    <p id="c56be1" class="defBord  ">{{item.intro}}
+                    </p>
+                </div>
+                <div id="cd10f3" class="animated wow fadeInRight  defBord  u6110e">
+                    {{each item.imgList item2 index2}}
+
+                    <img id="ce082c" class=" project_image  defBord  u88694" src="{{webConfig.defaultImg}}" alt="{{item.name}}" data-original="{{item2.url||webConfig.defaultImg}}" />
+                    {{/each}}
+
+                </div>
+            </a>
+            {{/each}}
+
+        </div>
+    </div>
+</div>
+<!--ShouYehtmlEnd-->
+
+
+<!--addJsCode-->
+<!--ShouYejslinkStart -->
+<script src="/view/js/swiper-bundle.min.js"> </script>
+<script src="/view/js/index.js"></script>
+<!-- ShouYejslinkEnd -->
+
+{{include './layout/footer.html'}}

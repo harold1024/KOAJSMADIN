@@ -1,0 +1,6 @@
+{
+	"watch":["app/**/*.js","./index.js","utils/**/*.js"],
+	"ignore":["node_modultes"],
+	"exc":"node index.js",
+	"ext":".js"
+}

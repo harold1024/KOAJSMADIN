@@ -1,0 +1,57 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>我是首页~~~
+<button onclick="getData()">点击访问请求测试走起</button>
+<form action="http://localhost:8086/admin/upload" enctype="application/x-www-form-urlencoded" method="post">
+    <input name="file" type="file"/>
+    <input name = 'name' />
+    <button type="submit">提交</button>
+</form>
+
+<form action="http://localhost:8086/admin/upload" enctype="multipart/form-data" method="post" target="nm_iframe">
+    <input type="file" name="file"/>
+    <input type="text" name="name" value="aaaa"/>
+    <input type="submit" value="提交">
+</form>
+<iframe id="id_iframe" name="nm_iframe" style="display:none;"></iframe>
+<button onclick="getData2()">测试新增接口</button>
+</body>
+<script>
+    function getData() {
+        $.ajax({
+            type: 'POST',
+            headers: {
+            },
+            url: 'http://localhost:8086/admin/upload',
+            data: {
+                name: '我是名称'
+            },
+            success: function (data) {
+                console.log(data)
+            },
+            dataType: "json"
+        });
+    }
+	
+	function getData2() {
+        $.ajax({
+            type: 'POST',
+            headers: {
+            },
+            url: 'http://localhost:8086/admin/tts/add',
+            data: {
+                name: '我是名称'
+            },
+            success: function (data) {
+                console.log(data)
+            },
+            dataType: "json"
+        });
+    }
+
+
+</script>
+</html>

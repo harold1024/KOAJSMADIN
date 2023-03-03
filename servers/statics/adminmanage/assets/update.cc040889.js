@@ -1,0 +1,1 @@
+import{_ as e}from"./index.23926b0b.js";const t={name:"",mounted(){},components:{},data(){return{}},methods:{default(){}},computed:{}};function a(n,_,r,o,u,d){return null}var s=e(t,[["render",a]]);export{s as default};

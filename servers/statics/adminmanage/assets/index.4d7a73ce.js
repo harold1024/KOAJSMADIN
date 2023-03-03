@@ -1,0 +1,1 @@
+import{_ as e}from"./index.bfeee670.js";import{r as o,o as t,j as n,x as u}from"./index.23926b0b.js";const f={setup(c){const r=o("/admin/swagger-ui/index.html");return(l,s)=>(t(),n(u(e),{src:r.value,"onUpdate:src":s[0]||(s[0]=a=>r.value=a)},null,8,["src"]))}};export{f as default};

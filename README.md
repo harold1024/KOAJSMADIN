@@ -1,10 +1,11 @@
+# 平台简介
 
-平台简介
 本仓库为前端技术栈 Vue3 + Element Plus + Vite 版本。
 配套后端代码servers文件夹中。
 前端技术栈（Vue2 + Element + Vue CLI），请移步RuoYi-Vue。
 本仓库基于若依vue3前端框架用guiplan转可视化之后二次开发，配合自己的koa2 + mongodb 实现前后端分离。再次感谢若依团队。
 配合guiplan软件，可以实现前端可视化开发，以及后端接口的可视化配置。自动生成前后端所有代码。
+
 ## 一.前端运行
 
 ```shell

@@ -46,7 +46,9 @@ const dictController = require('../controller/dictController')
 const menuController = require('../controller/menuController')
 // menu require end
 
-
+// siteManage require Start
+const siteManageController = require('../controller/siteManageController')
+// siteManage require end
 
 
 // install require Start
@@ -570,6 +572,28 @@ router.get('/getinfo', userController.findOneGetInfo)
 router.get('/logout', userController.findOneLogout)
 // eAyFfGP80 router end
 
+
+
+
+// findOneMongoData router Start
+router.get('/siteManage/data', siteManageController.findOneSiteManage)
+// findOneMongoData router end
+
+// updateMongoData router Start
+router.post('/siteManage/update', siteManageController.updateSiteManage)
+// updateMongoData router end
+
+// saveMongoData router Start
+router.post('/siteManage/add', siteManageController.saveSiteManage)
+// saveMongoData router end
+
+// removeMongoData router Start
+router.post('/siteManage/delete', siteManageController.removeSiteManage)
+// removeMongoData router end
+
+// findWhereMongoData router Start
+router.get('/siteManage/list', siteManageController.findWhereSiteManage)
+// findWhereMongoData router end
 
 
 

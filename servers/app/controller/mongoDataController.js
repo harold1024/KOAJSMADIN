@@ -9,7 +9,8 @@ const {
 const {
     spawn
 } = require('child_process');
-const path = require('path')
+const path = require('path');
+const fs = require('fs')
 const {
     exec
 } = require('child_process');
@@ -368,6 +369,11 @@ class gui {
 
         pathDir = path.join(__dirname, '../', '../', path.normalize(`/backup/${saveName}`)) // 不要用\\ 服务器linux系统不支持
 
+        // fs.mkdir(pathDir,function(err){
+        //     if(err) console.error('err',err);
+        //     console.log('创建目录成功');
+        // });
+
         if (process.env.NODE_ENV == 'production') {
             pathDir = path.join(__dirname, path.normalize(`/backup/${saveName}`))
         }
@@ -377,8 +383,10 @@ class gui {
         }
 
         exec(mongoCmd, (err, stdout, stderr) => {
+            console.error("mongoCmd",mongoCmd);
             if (err) {
-                console.error(err);
+                console.error("789654");
+                console.error("err",err);
                 return;
             }
             console.log('执行成功');

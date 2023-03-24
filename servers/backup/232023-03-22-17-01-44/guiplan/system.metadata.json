@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"guiplan.system"}],"uuid":"a3fff7512de143d2a35e544fbd2324fa","collectionName":"system","type":"collection"}

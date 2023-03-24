@@ -9,6 +9,7 @@ const mongoose = require('mongoose')
 const logger = require('../logger')
 const config = require('../config')
 const tableConfig = require('../tables')
+const console = require('console')
 const options = config.db
 console.log("配置信息如下")
 console.log(options)
